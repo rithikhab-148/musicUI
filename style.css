@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Music boxes */
+.music-box {
+    background: #111;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.music-box a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    background: #222;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.music-box a:hover {
+    background: #444;
+}
+
+/* Song display */
+.song-display {
+    display: none;
+    margin-top: 30px;
+}
+
+.song-display img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Show only clicked song */
+.song-display:target {
+    display: block;
+}
+
+/* Controls */
+.controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controls span {
+    width: 45px;
+    height: 45px;
+    background: #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.controls span:hover {
+    background: #777;
+}
